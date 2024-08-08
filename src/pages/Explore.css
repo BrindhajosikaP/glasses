@@ -1,0 +1,11 @@
+/* src/pages/Explore.css */
+.explore-page {
+  padding: 20px;
+}
+
+.explore-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2em;
+  color: #333;
+}

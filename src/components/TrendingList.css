@@ -1,0 +1,80 @@
+.trending-list {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping to new lines if there are too many cards */
+  justify-content: center; /* Center-align the cards horizontally */
+  gap: 20px; /* Add space between the cards */
+  padding: 20px;
+}
+
+.trending-card {
+  background: white;
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 200px; /* Adjust as needed */
+  height: auto; /* Adjust to fit content and buttons */
+  transition: transform 0.3s ease;
+  position: relative; /* Allow positioning of buttons inside card */
+}
+
+.trending-card:hover {
+  transform: scale(1.05);
+}
+
+.trending-card-image {
+  width: 100%;
+  height: 150px; /* Fixed height for the image */
+  object-fit: cover; /* Ensure image covers the area */
+}
+
+.trending-card-content {
+  padding: 15px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.trending-card-title {
+  font-size: 1.2em;
+  margin: 0 0 10px;
+}
+
+.trending-card-price {
+  font-size: 1em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.trending-card-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.trending-card-button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9em;
+  color: white;
+  transition: background 0.3s ease;
+}
+
+.trending-card-button.add-to-cart {
+  background: #ff4500;
+}
+
+.trending-card-button.add-to-wishlist {
+  background: #ff7f50;
+}
+
+.trending-card-button:hover {
+  background: #e03e00; /* Darker shade on hover for add-to-cart */
+}
+
+.trending-card-button.add-to-wishlist:hover {
+  background: #e05a40; /* Darker shade on hover for add-to-wishlist */
+}

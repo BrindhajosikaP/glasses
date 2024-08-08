@@ -1,0 +1,59 @@
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px; /* Adjust padding as necessary */
+  background-color: #f9f9f9;
+  margin-top: 60px; /* Offset for the fixed navbar height */
+}
+
+.banner-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.banner-text {
+  max-width: 50%;
+}
+
+.banner-text h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.banner-text p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.banner-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.browse-button, .more-button {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+.browse-button {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.more-button {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.banner-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}

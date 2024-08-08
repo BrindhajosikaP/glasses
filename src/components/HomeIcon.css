@@ -1,0 +1,15 @@
+/* src/components/HomeIcon.css */
+.home-icon {
+  display: inline-block;
+  margin: 10px;
+}
+
+.home-icon-image {
+  width: 30px; /* Adjust the size as needed */
+  height: 30px; /* Maintain aspect ratio */
+  transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.home-icon-image:hover {
+  transform: scale(1.1); /* Slight zoom on hover */
+}
